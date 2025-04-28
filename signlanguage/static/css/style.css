@@ -1,0 +1,195 @@
+/* 全局样式 */
+body {
+    font-family: 'Noto Sans SC', 'Microsoft YaHei', sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* 导航栏样式 */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* 主要内容区样式 */
+.container {
+    max-width: 1200px;
+}
+
+/* 页面标题样式 */
+.hero {
+    padding: 60px 0;
+    background-color: #e9ecef;
+}
+
+/* 卡片样式 */
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+}
+
+.card-header {
+    border-radius: 10px 10px 0 0 !important;
+    font-weight: 600;
+    padding: 12px 20px;
+}
+
+/* 视频流容器 */
+.video-container {
+    position: relative;
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+}
+
+.card-body img {
+    max-width: 100%;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+    display: block;
+}
+
+/* 摄像头卡片特殊样式 */
+.camera-card {
+    overflow: hidden;
+}
+
+/* 手势信息覆盖层 */
+.gesture-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px;
+}
+
+.gesture-indicator {
+    display: flex;
+    justify-content: space-around;
+}
+
+.gesture-indicator span {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+/* 按钮样式 */
+.btn-primary {
+    background-color: #0d6efd;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 20px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7;
+    transform: scale(1.05);
+}
+
+/* 手势卡片样式 */
+.gesture-grid {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.gesture-item {
+    margin: 10px;
+}
+
+.gesture-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: white;
+}
+
+.space-gesture {
+    background-color: #0d6efd;
+}
+
+.end-gesture {
+    background-color: #dc3545;
+}
+
+.gesture-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.gesture-desc {
+    font-size: 12px;
+    color: #6c757d;
+}
+
+/* AI响应卡片样式 */
+.ai-response-card {
+    height: 100%;
+}
+
+.ai-message {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 15px;
+    height: 150px;
+    overflow-y: auto;
+}
+
+.waiting-message {
+    color: #6c757d;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* 智能家居图标样式 */
+.fa-lightbulb, .fa-blinds, .fa-bell {
+    color: #6c757d;
+    transition: color 0.3s ease;
+}
+
+/* 特殊动画效果 */
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.3; }
+    100% { opacity: 1; }
+}
+
+.fa-shake {
+    animation: blink 1s infinite;
+}
+
+.pulse {
+    animation: blink 1.5s infinite;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .gesture-grid {
+        flex-direction: column;
+    }
+    
+    .gesture-indicator span {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+}
+
+/* 页脚样式 */
+.footer {
+    margin-top: 40px;
+} 
